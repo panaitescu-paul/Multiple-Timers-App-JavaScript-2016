@@ -1,0 +1,19 @@
+<div id="view3" class="view">
+	<div class="view3-top">
+		<div class="view3-time">
+			<span id="view3-time-1">{{item.displayedTime}}</span>
+		</div>
+	</div>
+	<span class="view3-title">Title</span>
+	<span id="view3-title">{{item.title}}</span>
+	<span class="view3-desc">Description</span>
+	<span id="view3-desc">{{item.description}}</span>
+	<div class="view3-btns">
+		<span id="btn-back" ng-click="listCb()">Back</span>
+		<div class="switch">
+			<input id="cmn-toggle-v3" class="cmn-toggle cmn-toggle-round" type="checkbox" ng-click="item.toggle = !item.toggle; timerSwitch(item);" ng-checked="item.toggle">
+			<label for="cmn-toggle-v3"></label>
+		</div>
+		<span id="btn-delete" ng-click="clearInterval(); deleteCb(); listCb();">Delete</span>
+	</div>
+</div>

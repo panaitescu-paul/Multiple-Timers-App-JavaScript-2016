@@ -1,0 +1,20 @@
+<div id="view1" class="view">
+	<span class="view1-title">Timers</span>
+	<ul>
+		<li ng-repeat="timer in list" ng-click="select($index)">
+			<span ng-if="timer.title" class="item-title">
+				{{timer.title}}
+			</span>
+			<span ng-if="!timer.title" class="item-title">
+				{{'Timer ' + list.indexOf(timer)}}
+			</span>
+			<span class="item-time">{{timer.displayedTime}}</span>
+		</span>
+		<div class="switch">
+			<input id="cmn-toggle-{{$index}}" class="cmn-toggle cmn-toggle-round" type="checkbox" ng-click="selection = $index; timer.toggle = !timer.toggle; timerSwitch(timer);" ng-checked="timer.toggle" stop-event>
+			<label for="cmn-toggle-{{$index}}" stop-event></label>
+		</div>
+	</li>
+</ul>
+<span class="btn-plus" ng-click="add()">Add Timer</span>
+</div>

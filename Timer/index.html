@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer - Angular JS</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="Application" ng-controller="TimerController">
+
+	<view1 ng-show="view === 1" 
+		list="timersList" 
+		selection="selectedItem" 
+		edit-cb="goToEdit()"
+		overview-cb="goToOverview()"
+		toggle="timersList[selectedItem].toggle">
+	</view1>
+
+	<view2 ng-show="view === 2" 
+		item="timersList[selectedItem]" 
+		list-cb="goToList()"
+		cancel-cb="cancelCb()">
+	</view2>
+
+	<view3 ng-show="view === 3" 
+		item="timersList[selectedItem]" 
+		list-cb="goToList()"
+		delete-cb="deleteCb()"
+		toggle="timersList[selectedItem].toggle">
+	</view3>
+
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

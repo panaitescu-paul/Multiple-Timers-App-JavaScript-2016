@@ -1,0 +1,15 @@
+<div id="view2" class="view">
+	<div class="view2-top">
+		<div class="view2-time">
+			<input id="view2-time-1" type="number" placeholder="00" min="0" max="24" ng-model="_item.hours" ng-keypress="validateLength($event)" ng-keyup="validateMinMax($event, 1)" /> <span class="dots">:</span>
+			<input id="view2-time-2" type="number" placeholder="00" min="0" max="60" ng-model="_item.min" ng-keypress="validateLength($event)" ng-keyup="validateMinMax($event)" /> <span class="dots">:</span>
+			<input id="view2-time-3" type="number" placeholder="00" min="0" max="60" ng-model="_item.sec" ng-keypress="validateLength($event)" ng-keyup="validateMinMax($event)"/>
+		</div>
+	</div>
+	<span class="view2-title">Title</span>
+	<input id="view2-title-input" type="text"  maxlength="12" ng-model="_item.title" ng-keypress="validateText(event)"> 
+	<span class="view2-desc">Description</span>
+	<input id="view2-desc-input" type="text"  maxlength="140" ng-model="_item.description" ng-keypress="validateText(event)">
+	<span id="btn-save" ng-click="save()">Save</span>
+	<span id="btn-cancel" ng-click="cancelCb();listCb()">Cancel</span>
+</div>

@@ -1,0 +1,371 @@
+body {
+  position: relative;
+}
+.view {
+  position: absolute;
+  width: 400px;
+  height: 570px;
+  top: 30px;
+  left: 50%;
+  margin-left: -200px;
+  color: rgb(66,66,66);
+  border: 1px solid rgb(224,224,224);
+  overflow: visible;
+  overflow-y: auto;
+  z-index: 1;
+  background: rgb(250,250,250); 
+}
+
+#view1 .view1-title {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 0;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  height: 64px;
+  padding-left: 40px;
+  line-height: 64px;
+  display: inline-block;
+}
+
+li span,
+#view2 span {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 0;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  height: 20px;
+  /*padding-left: 40px;*/
+  line-height: 20px;
+  display: inline-block;
+}
+
+#view1 .item-title
+/*#view2 .view2-title*/ {
+  float: left;
+  font-size: 16px;
+  margin-top: 4px;
+  width: 135px;
+}
+#view1 .item-time {
+  float: left;
+  font-size: 30px;
+  font-weight: 400;
+  width: 120px;
+}
+#view1 .switch {
+  float: right;
+  margin-top: -2px;
+}
+ /*--------------------- LIST ----------------------*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  padding: 16px 40px;
+  margin: 0;
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  height: 20px;
+  border-top: 1px solid rgb(224,224,224);
+}
+ul li:last-child {
+  border-bottom: 1px solid rgb(224,224,224);
+}
+
+li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #e0e0e0;
+}
+
+.item-title {
+  font-size: 16px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+ /*--------------------- Buttons ----------------------*/
+
+.btn-plus,
+#btn-back,
+#btn-delete,
+#btn-save,
+#btn-cancel {
+  background: 0 0;
+  border: 0;
+  border-radius: 2px;
+  color: #000;
+  display: inline-block;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px !important;
+  vertical-align: middle;
+  will-change: box-shadow,transform;
+  -webkit-transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+  outline: none;
+  margin: 16px 40px;
+  border: 1px solid #1f2e2e;
+  height: 36px !important;
+  min-width: 64px;
+  padding: 0 8px;
+}
+
+#btn-save,
+#btn-cancel,
+#btn-back,
+#btn-delete {
+  width: 50px !important;
+  margin: 30px !important;
+}
+
+.btn-plus:hover,
+#btn-back:hover,
+#btn-delete:hover,
+#btn-save:hover,
+#btn-cancel:hover {
+  background-color: rgba(158,158,158,.2);
+  border: 1px solid rgba(158,158,158,.2);
+}
+
+#view1 .btn-plus {
+  margin-top: 30px;
+}
+
+
+#btn-delete,
+#btn-cancel {
+  float: right;
+}
+ /*--------------------- View 2  & View 3 ----------------------*/
+
+.view2-top,
+.view3-top {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.view2-time,
+.view3-time {
+  position: absolute;
+  width: 340px;
+  height: 100px;
+  top: 40%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -20px;
+}
+
+#view2-time-1,
+#view2-time-2,
+#view2-time-3,
+#view3-time-1,
+#view3-time-2,
+#view3-time-3,
+.dots {
+  display: inline-block;
+  width: 90px;
+  margin: 10px 0px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 55px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+#view2-time-1,
+#view3-time-1 {
+  padding-left: 15px; 
+}
+
+span.dots {
+  width: 15px;
+  font-size: 60px !important;
+}
+
+.view3-time #view3-time-1 {
+  width: 340px;
+  padding: 0;
+  color: #757575;
+}
+
+.view2-time input[type=number]::-webkit-inner-spin-button, 
+.view2-time input[type=number]::-webkit-outer-spin-button,
+.view3-time input[type=number]::-webkit-inner-spin-button, 
+.view3-time input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*---------------------------*/
+
+#view2 span.view2-title,
+#view2 span.view2-desc,
+#view3 span.view3-title,
+#view3 span.view3-desc {
+  display: block;
+  width: 300px;
+  padding: 15px 30px !important;
+  font-size: 18px;
+}
+
+#view3-title,
+#view3-desc {
+  display: block;
+  font-size: 13px;
+  margin: 0px 30px;
+  padding: 0 8px;
+  width: 320px;
+  max-height: 100px;
+  background: 0 0;
+  text-align: left;
+  color: inherit;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  color: #757575;
+}
+#view3 span#view3-desc {
+  display: block;
+  max-width: 320px;
+  word-break: break-word;
+}
+
+
+.view3-btns .switch {
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 35px;
+  width: 50px;
+  display: inline-block;
+}
+
+.view3-btns {
+  position: relative;
+}
+ /*--------------------- Inputs ----------------------*/
+
+input[type="text"],
+input[type="number"],
+input[type="isoTime"] {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  display: block;
+  font-size: 13px;
+  margin: 0px 30px;
+  padding: 0 4px;
+  width: 100px;
+  background: 0 0;
+  text-align: left;
+  color: inherit;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  color: #757575;
+}
+
+input:focus {
+  outline: none
+}
+
+
+/* ============================================================
+                  TOGGLE BUTTON - COMMON
+============================================================ */
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ============================================================
+                          SWITCH 1 - ROUND
+============================================================ */
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 40px;
+  height: 20px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 22px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 21px;
+}
+
+/* ============================================================
+                  TOGGLE BUTTON - finished
+============================================================ */
