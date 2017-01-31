@@ -1,4 +1,5 @@
 # Timer App
+Set and customize multiple timers.
 
 1. set timer 
   - title
