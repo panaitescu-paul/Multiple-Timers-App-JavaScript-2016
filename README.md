@@ -1,13 +1,13 @@
-# Timer App
+# Multiple Timers App - JavaScript - 2016
 Set and customize multiple timers.
 
-1. set timer 
-  - title
-  - description
-  - hours, minutes, seconds
-
-2. start/stop timer
-3. set multiple timers
+###Features:
+1. Set timer 
+  - Title
+  - Description
+  - Hours, minutes, seconds
+2. Start/stop timer
+3. Set multiple timers
 
 
 ![alt tag](https://github.com/panaitescu-paul/timer/blob/master/Process/1.png) 
