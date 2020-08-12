@@ -1,7 +1,7 @@
 # Multiple Timers App - JavaScript - 2016
 Set and customize multiple timers.
 
-###Features:
+### Features:
 1. Set timer 
   - Title
   - Description
