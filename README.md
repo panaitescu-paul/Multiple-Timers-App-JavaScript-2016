@@ -3,9 +3,9 @@
 
 ## Features:
 1. **Set Timer**
-  - Title
-  - Description
-  - Hours, minutes, seconds
+    - Title
+    - Description
+    - Hours, minutes, seconds
 2. **Start/Stop Timer**
 3. **Operate multiple Timers**
 
